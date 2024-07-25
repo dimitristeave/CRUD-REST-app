@@ -1,0 +1,54 @@
+body {
+        font-family: Arial, sans-serif; /* Utiliser une police de caractères lisible */
+        background-color: #f2f2f2; /* Couleur de fond de la page */
+        margin: 0;
+        padding: 0;
+      }
+
+      h2 {
+          text-align: center; /* Centrer le titre */
+      }
+
+      form {
+          width: 50%;
+          margin: 0 auto;
+          padding: 20px;
+          border: 1px solid #ccc;
+          border-radius: 10px;
+          background-color: #fff; /* Couleur de fond du formulaire */
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Ombre légère autour du formulaire */
+      }
+
+      label {
+          display: block;
+          margin-bottom: 10px;
+      }
+
+      input[type="text"],
+      input[type="datetime-local"],
+      input[type="number"],
+      input[type="submit"] {
+          width: 100%;
+          padding: 10px;
+          margin-bottom: 15px;
+          border: 1px solid #ccc;
+          border-radius: 5px;
+          box-sizing: border-box; /* Inclure les bordures et les rembourrages dans la largeur */
+      }
+
+      input[type="submit"] {
+          background-color: #007bff; /* Couleur de fond du bouton */
+          color: #fff; /* Couleur du texte du bouton */
+          font-weight: bold;
+          cursor: pointer;
+          transition: background-color 0.3s ease; /* Animation de transition */
+      }
+
+      input[type="submit"]:hover {
+          background-color: #0056b3; /* Couleur de fond du bouton lors du survol */
+      }
+
+         h1 {
+        text-align: center;
+        margin-top: 20px;
+      }

@@ -1,0 +1,81 @@
+@media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+      .bi {
+        vertical-align: -.125em;
+        fill: currentColor;
+      }
+      .nav-scroller .nav {
+        display: flex;
+        flex-wrap: nowrap;
+        padding-bottom: 1rem;
+        margin-top: -1px;
+        overflow-x: auto;
+        text-align: center;
+        white-space: nowrap;
+        -webkit-overflow-scrolling: touch;
+      }
+      .bd-mode-toggle .dropdown-menu .active .bi {
+        display: block !important;
+      }
+
+      .button-container {
+          display: flex;
+          justify-content: space-between; /* Les éléments sont espacés uniformément sur la ligne */
+      }
+
+      .button-container .btn{
+          margin-right: 5px;
+      }
+
+      .btn btn-primary rounded-circle p-2 lh-1, .btn btn-outline-primary rounded-circle p-2 lh-1 {
+          flex: 1; /* Les formulaires occupent le même espace */
+          display: flex;
+          justify-content: flex-start; /* Les éléments à l'intérieur des formulaires sont alignés à gauche */
+      }
+
+      .btn btn-outline-primary rounded-circle p-2 lh-1 {
+          justify-content: flex-end; /* Les éléments à l'intérieur du formulaire sont alignés à droite */
+      }
+
+      h1{
+        text-align: center;
+      }
+
+      .btn-delete:hover {
+        background-color: red;
+        border-color: red;
+      }
+      .containeradd {
+        text-align: center;
+        margin-bottom: 20px;
+      }
+
+      .btn {
+          height: auto;
+          padding: 6px 12px;
+      }
+      /* Style du bouton */
+      #btn-back-to-top {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        display: none;
+      }
+
+      /* Sélecteur pour cibler tous les tableaux */
+      table {
+        font-size: 16px; /* Taille de police pour le tableau */
+      }
+
+      /* Sélecteur pour cibler uniquement les en-têtes de tableau */
+      table th {
+        font-size: 18px; /* Taille de police pour les en-têtes de tableau */
+      }
+
+      /* Sélecteur pour cibler uniquement les cellules de tableau */
+      table td {
+        font-size: 14px; /* Taille de police pour les cellules de tableau */
+      }

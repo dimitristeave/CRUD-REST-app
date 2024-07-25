@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Update Record</title>
+    <link href="/static/create.css" rel="stylesheet">
+  </head>
+
+  <body>
+    <h1>Update Record</h1>
+    <form action="/records/<%= record._id %>" method="POST">
+      <label for="type">Record type</label>
+      <input type="text" id="type" name="symbol" value="<%= record.symbol %>" required><br>
+      <label for="timestamp">Time :</label>
+      <input type="datetime-local" id="timestamp" name="timestamp" value="<%= record.timestamp.toISOString().slice(0, 16) %>" required><br>
+      <label for="open">Open amount :</label>
+      <input type="number" id="open" name="open" value="<%= record.open %>" required><br>
+      <label for="high">High amount :</label>
+      <input type="number" id="high" name="high" value="<%= record.high %>" required><br>
+      <label for="low">Low amount :</label>
+      <input type="number" id="low" name="low" value="<%= record.low %>" required><br>
+      <label for="close">Close amount :</label>
+      <input type="number" id="close" name="close" value="<%= record.close %>" required><br>
+      <label for="volume">Traffic volume :</label>
+      <input type="number" id="volume" name="volume" value="<%= record.volume %>" required><br>
+      <input type="submit" value="Update">
+    </form>
+
+  </body>
+</html>

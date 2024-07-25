@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Record</title>
+    <link href="/static/details.css" rel="stylesheet">
+
+  </head>
+
+  <body>
+    <h1>Details <%= record.symbol %> Record</h1>
+    <p><%= record._id %></p>
+    <form action="/records_/<%= record._id %>" method="POST">
+      <label for="type">Record type</label>
+      <input type="text" id="type" name="symbol" value="<%= record.symbol %>" disabled><br>
+      <label for="timestamp">Time :</label>
+      <input type="datetime-local" id="timestamp" name="timestamp" value="<%= record.timestamp.toISOString().slice(0, 16) %>" disabled><br>
+      <label for="open">Open amount :</label>
+      <input type="number" id="open" name="open" value="<%= record.open %>" disabled><br>
+      <label for="high">High amount :</label>
+      <input type="number" id="high" name="high" value="<%= record.high %>" disabled><br>
+      <label for="low">Low amount :</label>
+      <input type="number" id="low" name="low" value="<%= record.low %>" disabled><br>
+      <label for="close">Close amount :</label>
+      <input type="number" id="close" name="close" value="<%= record.close %>" disabled><br>
+      <label for="volume">Traffic volume :</label>
+      <input type="number" id="volume" name="volume" value="<%= record.volume %>" disabled><br>
+    </form>
+
+  </body>
+</html>

@@ -1,0 +1,224 @@
+<!doctype html>
+<html lang="en" data-bs-theme="auto">
+  <head><script src="../assets/js/color-modes.js"></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.122.0">
+    <title>Bourse</title>
+    <!--bootsrap pour le style-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/buttons/">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3">
+    <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!--css pour le style-->
+    <link href="../static/table.css" rel="stylesheet">
+
+  </head>
+
+  <body>
+    <!--Svg bootsrap pour les boutons add et update-->
+    <svg xmlns="http://www.w3.org/2000/svg" class="d-none">
+      <symbol id="check2" viewBox="0 0 16 16">
+        <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/>
+      </symbol>
+      <symbol id="circle-half" viewBox="0 0 16 16">
+        <path d="M8 15A7 7 0 1 0 8 1v14zm0 1A8 8 0 1 1 8 0a8 8 0 0 1 0 16z"/>
+      </symbol>
+      <symbol id="moon-stars-fill" viewBox="0 0 16 16">
+        <path d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278z"/>
+        <path d="M10.794 3.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387a1.734 1.734 0 0 0-1.097 1.097l-.387 1.162a.217.217 0 0 1-.412 0l-.387-1.162A1.734 1.734 0 0 0 9.31 6.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387a1.734 1.734 0 0 0 1.097-1.097l.387-1.162zM13.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.156 1.156 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.156 1.156 0 0 0-.732-.732l-.774-.258a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732L13.863.1z"/>
+      </symbol>
+      <symbol id="sun-fill" viewBox="0 0 16 16">
+        <path d="M8 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z"/>
+      </symbol>
+    </svg>
+
+    <svg xmlns="http://www.w3.org/2000/svg" class="d-none">
+      <symbol id="arrow-right-short" viewBox="0 0 16 16">
+        <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"/>
+      </symbol>
+      <symbol id="x-lg" viewBox="0 0 16 16">
+        <path fill-rule="evenodd" d="M13.854 2.146a.5.5 0 0 1 0 .708l-11 11a.5.5 0 0 1-.708-.708l11-11a.5.5 0 0 1 .708 0Z"/>
+        <path fill-rule="evenodd" d="M2.146 2.146a.5.5 0 0 0 0 .708l11 11a.5.5 0 0 0 .708-.708l-11-11a.5.5 0 0 0-.708 0Z"/>
+      </symbol>
+    </svg>
+
+    <div class="containeradd">
+      <h1 class="h1">Stock Market Data</h1>
+      <form action="/records/create" method="GET" class="formadd">
+          <!-- Bouton Ajouter -->
+          <button class="btn btn-primary rounded-circle p-2 lh-1 add" id="add" type="submit">
+              <svg class="bi" width="16" height="16" fill="currentColor">
+                  <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4"/>
+              </svg>
+              <span class="visually-hidden">Ajouter</span>
+          </button>
+      </form>
+      <!--Filtre de date-->
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-3">
+            <h4 class="text-center">Date from</h4>
+            <input type="date" class="form-control" id="datefilterfrom" data-date-split-input="true">
+          </div>
+          <div class="col-md-3">
+            <h4 class="text-center">Date to</h4>
+            <input type="date" class="form-control" id="datefilterto" data-date-split-input="true">
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="container">
+      <div class="table-container">
+        <table class="table table-hover" id="testTable">
+          <thead>
+            <tr>
+              <th scope="col">N°</th>
+              <th scope="col">Symbol</th>
+              <th scope="col">Heure de Prise</th>
+              <th scope="col">Open</th>
+              <th scope="col">High</th>
+              <th scope="col">Low</th>
+              <th scope="col">Close</th>
+              <th scope="col">Volume</th>
+              <th scope="col">Actions</th>
+            </tr>
+          </thead>
+          <tbody>
+            <% let rowNum = 1; %>
+            <% data.forEach(row => { %>
+            <tr>
+              <th scope="row"><%= rowNum++ %></th>
+              <td><a href="/records_/<%= row._id %>"><%= row.symbol %></a></td>
+              <!--<td><%= row.symbol %></td>-->
+              <td><%= row.timestamp %></td>
+              <td><%= row.open %></td>
+              <td><%= row.high %></td>
+              <td><%= row.low %></td>
+              <td><%= row.close %></td>
+              <td><%= row.volume %></td>
+              <td>
+                <div class="button-container">
+                <button class="btn btn-outline-primary rounded-circle p-2 lh-1 btn-delete" onclick="deleteRecord('<%= row._id %>')">
+                    <svg class="bi" width="16" height="16"><use xlink:href="#x-lg"/></svg>
+                    <span class="visually-hidden">Dismiss</span>
+                  </button>
+                <form action="/records/<%= row._id %>" method="GET">
+                  <button class="btn btn-outline-primary rounded-circle p-2 lh-1" type="submit">
+                    <svg class="bi" width="16" height="16" fill="currentColor">
+                      <path d="M12.146.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1 0 .708l-10 10a.5.5 0 0 1-.168.11l-5 2a.5.5 0 0 1-.65-.65l2-5a.5.5 0 0 1 .11-.168zM11.207 2.5 13.5 4.793 14.793 3.5 12.5 1.207zm1.586 3L10.5 3.207 4 9.707V10h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.293zm-9.761 5.175-.106.106-1.528 3.821 3.821-1.528.106-.106A.5.5 0 0 1 5 12.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.468-.325"/>
+                    </svg>
+                    <span class="visually-hidden">Modifier</span>
+                  </button>
+
+                </form>
+                  </div>
+              </td>
+            </tr>
+          </tbody>
+      <% }); %>
+      </table>
+        <div style="justify-content: center">
+            <a href="/records/create" style="font-size:18px"><button class="btn btn-primary" type="button" style="width: 100%; font-size:18px">Register</button></a>
+        </div>
+        <p class="mt-5 mb-3 text-body-secondary">&copy;Dimi-2024</p>
+      </div>
+    </div>
+    <!--Bouton de scroll up-->
+    <button type="button" class="btn-primary btn-floating btn-lg" id="btn-back-to-top">
+      <span class="glyphicon glyphicon-menu-up"></span>
+    </button>
+    <!--JS pour le le scroll-->
+    <script>
+      //Get the button
+      let mybutton = document.getElementById("btn-back-to-top");
+
+      // When the user scrolls down 20px from the top of the document, show the button
+      window.onscroll = function () {
+        scrollFunction();
+      };
+
+      function scrollFunction() {
+        if (
+          document.body.scrollTop > 5000 ||
+          document.documentElement.scrollTop > 5000 || (window.innerHeight + window.scrollY) >= document.body.offsetHeight
+        ) {
+          mybutton.style.display = "block";
+        } else {
+          mybutton.style.display = "none";
+        }
+      }
+      // When the user clicks on the button, scroll to the top of the document
+      mybutton.addEventListener("click", backToTop);
+
+      function backToTop() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+      }
+    </script>
+    //JS pour le style
+    <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+    <!--JS pour le filtre-->
+    <script>
+      function filterRows() {
+        var from = $('#datefilterfrom').val();
+        var to = $('#datefilterto').val();
+
+        if (!from && !to) { // no value for from and to
+          return;
+        }
+
+        from = from || '1970-01-01'; // default from to a old date if it is not set
+        to = to || '2999-12-31';
+
+        var dateFrom = moment(from);
+        var dateTo = moment(to);
+
+        $('#testTable tr').each(function(i, tr) {
+          var val = $(tr).find("td:nth-child(3)").text();
+          var dateVal = moment(val, "ddd MMM DD YYYY HH:mm:ss");
+          var visible = (dateVal.isBetween(dateFrom, dateTo, null, [])) ? "" : "none"; // [] for inclusive
+          $(tr).css('display', visible);
+        });
+      }
+
+      $('#datefilterfrom').on("change", filterRows);
+      $('#datefilterto').on("change", filterRows);
+    </script>
+    //script fetch pour la methode delete
+    <script>
+        function deleteRecord(id) {
+          fetch(`/record/${id}`, {
+            method: 'DELETE',
+            headers: {
+              'Content-Type': 'application/json'
+            }
+          })
+          location.reload(); // Reload the page to reflect the changes
+        }
+    </script>
+
+  </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
